@@ -61,7 +61,8 @@ def transformacion(df_ventas,df_clientes):
         return df_final
     except Exception as e:
         print(f"No se completo la transformacion: {e}")
-
+        
+#funcion para la carga
 def carga(df_final,ruta_archivo):
     df_final.to_csv(ruta_archivo,index=False)
     print(f"Carga hecha correctamente en {ruta_archivo}")
