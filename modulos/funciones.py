@@ -30,7 +30,8 @@ def extraccion(engine,nombre_tabla):
         return df
     except Exception as e:
         print(f"Fallo la extraccion: {e}")
-
+        
+#funcion para las transformaciones necesaias
 def transformacion(df_ventas,df_clientes):
     try:
         #borraremos lo datos duplicados de cada base de datos antes de hacer el merge
